@@ -21,7 +21,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <>
-    <Switch onCheckedChange={() => setTheme(theme === "dark" ? "light" : "dark")}></Switch>
+    <div className="px-4 pt-1"><Switch onCheckedChange={() => setTheme(theme === "dark" ? "light" : "dark")}></Switch></div>
     </>
   );
 };
