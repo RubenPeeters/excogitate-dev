@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/custom/navbar";
+import { Navbar } from "@/components/custom/navbar";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Excogitate",
-  description: "Excogitate Developer profile.",
-};
 
 export default function RootLayout({
   children,
@@ -19,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex justify-center p-4">
-          <NavBar></NavBar>
+        <Navbar></Navbar>
         </div>
         {children}
       </body>
