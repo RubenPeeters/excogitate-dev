@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
+import { Switch } from "@/components/ui/switch"
+import { ThemeSwitcher } from "./theme-switcher";
 
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -34,6 +36,7 @@ export function Navbar({ className }: { className?: string }) {
         <HoveredLink href="/about">About</HoveredLink>
 
         <HoveredLink href="#contact">Contact</HoveredLink>
+        <ThemeSwitcher />
       </Menu>
     </div>
   );

@@ -45,7 +45,7 @@ export function MyCard({
           </CardContent>
           <CardFooter>
             <Button asChild variant="link">
-              <Link className="text-zinc-700" href={link}>
+              <Link className="text-zinc-700 dark:text-zinc-200" href={link}>
                 Read more...
               </Link>
             </Button>
