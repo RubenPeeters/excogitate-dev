@@ -5,7 +5,7 @@ import { MyCard } from "./my-card";
 export function Services() {
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-4 py-4 justify-center">
+      <div className="flex flex-row flex-wrap gap-6 justify-center">
         <MyCard
           src="https://media.discordapp.net/attachments/1035214140039512137/1211392385108410440/ruben_p_data_science_in_the_21st_century_minimalist_clean_simpl_fff60e5f-63e3-4713-81e2-9fa29c0b63af.png?ex=65ee0813&is=65db9313&hm=a50f6f699dc89bd207413434a010c04c030d9f29512fa38b22f59d5324eebd35&=&format=webp&quality=lossless&width=905&height=905"
           title="Data Science"
