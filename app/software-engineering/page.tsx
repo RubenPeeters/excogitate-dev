@@ -2,6 +2,7 @@
 
 import { Contact } from "@/components/custom/contact";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Meteors } from "@/components/ui/meteors";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 
 import {
@@ -88,6 +89,7 @@ export default function SoftwareEngineer() {
         <Contact></Contact>
       </div>
       <BackgroundBeams />
+      <Meteors number={50} />
     </div>
   );
 }
