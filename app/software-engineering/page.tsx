@@ -88,7 +88,6 @@ export default function SoftwareEngineer() {
         </div>
         <Contact></Contact>
       </div>
-      <BackgroundBeams />
       <Meteors number={50} />
     </div>
   );
