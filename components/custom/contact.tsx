@@ -8,7 +8,7 @@ export function Contact() {
     <div className="h-[40rem] w-full rounded-md bg-white dark:bg-black relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4">
         <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b dark:from-white dark:to-neutral-200 from-black to-neutral-700  text-center font-sans font-bold">
-          Get in contact.
+          Contact
         </h1>
         <p></p>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
@@ -20,7 +20,7 @@ export function Contact() {
           href="mailto:ruben@excogitate.dev"
           className={buttonVariants({ variant: "outline" })}
         >
-          Email me
+          Reach out
         </Link>
       </div>
     </div>

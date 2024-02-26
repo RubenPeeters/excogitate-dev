@@ -51,17 +51,11 @@ const services: { title: string; href: string; description: string }[] = [
     description:
       "Lower costs through data quality.",
   },
-  {
-    title: "FAIR Data",
-    href: "/fair-data",
-    description:
-      "Make your research data FAIR.",
-  },
 ]
 
 export function Navbar() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="z-50">
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
@@ -74,7 +68,7 @@ export function Navbar() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] z-50">
               {services.map((component) => (
                 <ListItem
                   key={component.title}
