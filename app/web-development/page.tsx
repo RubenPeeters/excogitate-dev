@@ -87,7 +87,6 @@ export default function WebDev() {
         </div>
         <Contact></Contact>
       </div>
-      <Meteors number={50} />
     </div>
   );
 }

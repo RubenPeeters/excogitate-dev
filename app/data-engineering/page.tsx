@@ -1,9 +1,6 @@
 "use client";
 
 import { Contact } from "@/components/custom/contact";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { Meteors } from "@/components/ui/meteors";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 
 import {
   BuildingOffice2Icon,
@@ -81,7 +78,6 @@ export default function DataEngineering() {
         </div>
         <Contact></Contact>
       </div>
-      <Meteors number={50} />
     </div>
   );
 }

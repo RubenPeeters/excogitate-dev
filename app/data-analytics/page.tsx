@@ -1,9 +1,6 @@
 "use client";
 
 import { Contact } from "@/components/custom/contact";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { Meteors } from "@/components/ui/meteors";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 
 import {
   MagnifyingGlassCircleIcon,
@@ -87,7 +84,6 @@ export default function DataAnalytics() {
         </div>
         <Contact></Contact>
       </div>
-      <Meteors number={50} />
     </div>
   );
 }

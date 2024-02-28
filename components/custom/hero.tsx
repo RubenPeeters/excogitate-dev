@@ -4,7 +4,7 @@ import { SparklesCore } from "../ui/sparkles";
 import { useTheme } from "next-themes";
 
 export default function Hero() {
-const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="h-[70rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
@@ -19,21 +19,25 @@ const { theme, setTheme } = useTheme();
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
 
         {/* Core component */}
-        {theme == 'light'? <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#000000"
-        /> : <SparklesCore
-        background="transparent"
-        minSize={0.4}
-        maxSize={1}
-        particleDensity={1200}
-        className="w-full h-full"
-        particleColor="#FFFFFF"
-      />}
+        {theme == "light" ? (
+          <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={1200}
+            className="w-full h-full"
+            particleColor="#000000"
+          />
+        ) : (
+          <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={1200}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
+        )}
 
         {/* Radial Gradient to prevent sharp edges */}
         <div className="absolute inset-0 w-full h-full bg-white dark:bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
@@ -41,5 +45,3 @@ const { theme, setTheme } = useTheme();
     </div>
   );
 }
-
-
