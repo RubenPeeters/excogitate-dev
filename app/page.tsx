@@ -71,7 +71,7 @@ export default function Home() {
           <Hero></Hero>
         </div>
 
-        <div className="overflow-hidden bg-white dark:bg-black py-32">
+        <div className="overflow-hidden bg-white dark:bg-black py-48">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center max-w-full">
-        <div className="overflow-hidden bg-gradient-to-r dark:from-blue-700 from-50% dark:to-blue-500 to-blue-500  from-blue-300 py-24 sm:py-32 rounded-lg">
+        <div className="overflow-hidden bg-gradient-to-l dark:bg-gradient-to-r dark:from-blue-700 from-50% dark:to-blue-500 to-blue-500  from-blue-300 py-48 rounded-lg">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:ml-auto lg:pl-4 lg:pt-4">
@@ -160,13 +160,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-screen-2xl pb-48">
+        <div className="max-w-screen-2xl py-64">
           <Services></Services>
         </div>
         <div className=" w-full">
           <Contact></Contact>
         </div>
-        <div className=" w-full">
+        <div className=" w-full py-40">
           <Testimonials></Testimonials>
         </div>
 

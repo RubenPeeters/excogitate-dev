@@ -39,8 +39,8 @@ export const projects = [
 
 export function Services() {
   return (
-    <div className="max-w-5xl mx-auto px-8 pt-32">
-      <h1 className="text-4xl font-bold text-center  dark:text-blue-600 text-blue-500 relative z-20">
+    <div className="max-w-5xl mx-auto px-8">
+      <h1 className="text-4xl font-bold text-center dark:text-white text-blue-900 relative pb-16 z-20">
         What we offer...
       </h1>
       <HoverEffect items={projects} />
