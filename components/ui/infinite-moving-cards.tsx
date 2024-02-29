@@ -89,8 +89,7 @@ export const InfiniteMovingCards = ({
           <li
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 dark:border-slate-700 border-slate-200 px-8 py-6 md:w-[450px]"
             style={{
-              background:
-                " var(--white),",
+              background: " var(--white),",
             }}
             key={item.name}
           >
@@ -104,7 +103,7 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] dark:text-gray-400 text-gray-800 font-normal">
+                  <span className=" text-sm leading-[1.6] dark:text-blue-400 text-blue-700 font-normal">
                     {item.name}
                   </span>
                   <span className=" text-sm leading-[1.6] dark:text-gray-400 text-gray-800 font-normal">
