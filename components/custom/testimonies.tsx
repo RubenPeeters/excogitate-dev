@@ -1,11 +1,10 @@
 "use client";
 
-
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function Testimonials() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -29,7 +28,8 @@ const testimonials = [
     title: "Let Them Analyze Data Cake: A Queen's Review",
   },
   {
-    quote: "In the realm of data and software, this chap is the epitome of relativity! His algorithms dance like particles in a quantum field, unpredictably yet elegantly shaping the landscape of information. With each line of code, he unravels the mysteries of the universe, leaving us mere mortals in awe of his computational prowess. E=mc^2? More like E=mc^fun when he's around!",
+    quote:
+      "In the realm of data and software, this chap is the epitome of relativity! His algorithms dance like particles in a quantum field, unpredictably yet elegantly shaping the landscape of information. With each line of code, he unravels the mysteries of the universe, leaving us mere mortals in awe of his computational prowess. E=mc^2? More like E=mc^fun when he's around!",
     name: "Albert Einstein",
     title: "Einstein's Equation for Excellence: A Relativistic Review",
   },
