@@ -67,11 +67,11 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="max-w-7xl h-screen">
+        <div className="w-screen h-screen">
           <Hero></Hero>
         </div>
 
-        <div className="overflow-hidden bg-white dark:bg-black py-24 sm:py-32 ">
+        <div className="overflow-hidden bg-white dark:bg-black py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
@@ -113,7 +113,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden bg-white dark:bg-black py-24 sm:py-32">
+      </div>
+      <div className="flex flex-col items-center max-w-full">
+        <div className="overflow-hidden bg-gradient-to-l dark:from-blue-700 from-50% dark:to-blue-500 to-blue-500  from-blue-300 py-24 sm:py-32 rounded-lg">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:ml-auto lg:pl-4 lg:pt-4">
