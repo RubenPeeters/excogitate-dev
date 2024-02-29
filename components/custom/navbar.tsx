@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,27 +12,24 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { ThemeSwitcher } from "./theme-switcher"
+} from "@/components/ui/navigation-menu";
+import { ThemeSwitcher } from "./theme-switcher";
 
 const services: { title: string; href: string; description: string }[] = [
   {
     title: "Data Science",
     href: "/data-science",
-    description:
-      "Use AI models to create value from your data.",
+    description: "Use AI models to create value from your data.",
   },
   {
     title: "Data Analytics",
     href: "/data-analytics",
-    description:
-      "Extract valuable insights from your data.",
+    description: "Extract valuable insights from your data.",
   },
   {
     title: "Data Engineering",
     href: "/data-engineering",
-    description:
-      "Streamline your data pipelines.",
+    description: "Streamline your data pipelines.",
   },
   {
     title: "Web Development",
@@ -42,29 +39,27 @@ const services: { title: string; href: string; description: string }[] = [
   {
     title: "Software Engineering",
     href: "/software-engineering",
-    description:
-      "Automate your business processes.",
+    description: "Automate your business processes.",
   },
   {
     title: "Data Governance",
     href: "/data-governance",
-    description:
-      "Lower costs through data quality.",
+    description: "Lower costs through data quality.",
   },
-]
+];
 
 export function Navbar() {
   return (
     <NavigationMenu className="z-50">
       <NavigationMenuList>
-      <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-            
+
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -82,9 +77,9 @@ export function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/pricing" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Pricing
+              Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -98,7 +93,7 @@ export function Navbar() {
       </NavigationMenuList>
       <ThemeSwitcher />
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -123,6 +118,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
