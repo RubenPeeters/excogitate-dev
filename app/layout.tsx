@@ -15,6 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="flex justify-center p-4">
+            <Navbar></Navbar>
+          </div>
           {children}
           <Footer></Footer>
         </ThemeProvider>

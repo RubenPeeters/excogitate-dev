@@ -3,9 +3,9 @@ import React from "react";
 
 export function Contact() {
   return (
-    <div className="bg-gradient-to-l dark:from-blue-700 from-50% dark:to-blue-500 to-blue-500  from-blue-300">
+    <div className="bg-gradient-to-l dark:to-blue-900 from-50% dark:from-blue-800 to-blue-500  from-blue-300">
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-white dark:bg-black px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16 border ">
+        <div className="relative isolate overflow-hidden bg-white dark:bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16 border ">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight dark:text-white sm:text-4xl">
             Caught your interest?
           </h2>

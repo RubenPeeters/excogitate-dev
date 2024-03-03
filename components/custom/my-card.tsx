@@ -32,7 +32,7 @@ export function MyCard({
 }) {
   return (
     <>
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-2 bg-white dark:bg-zinc-900">
+      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-2">
         <Card>
           <CardHeader>
             <CardTitle>{title}</CardTitle>
