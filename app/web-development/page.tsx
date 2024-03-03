@@ -85,8 +85,8 @@ export default function WebDev() {
             height={1444}
           />
         </div>
-        <Contact></Contact>
       </div>
+      <Contact></Contact>
     </div>
   );
 }

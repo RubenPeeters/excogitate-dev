@@ -77,11 +77,10 @@ export default function Home() {
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center">
-                    Data Consultancy
+                    Make informed decisions using data.
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 text-center">
-                    Unlock insights, solve problems, get guidance, and
-                    collaborate to make smart decisions using data.
+                    Generate insights, create value
                   </p>
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {data_features.map((feature) => (
@@ -106,9 +105,9 @@ export default function Home() {
                     : "https://media.discordapp.net/attachments/1035214140039512137/1212519457629536307/ruben_p_data_professional_web_image_clean_e5c073b1-5599-4a7c-a5fa-074af3b171a9.png?ex=65f221be&is=65dfacbe&hm=050e84a084454fc3370f289deaa835325cfc08a9bb9fb4e847bfaadced9a5e30&=&format=webp&quality=lossless&width=700&height=700"
                 }
                 alt="Product screenshot"
-                className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[48rem] md:-ml-4 lg:-ml-0 z-20"
-                width={2432}
-                height={1444}
+                className="w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20"
+                width={1444}
+                height={1000}
               />
             </div>
           </div>
@@ -152,7 +151,7 @@ export default function Home() {
                       : "https://media.discordapp.net/attachments/1035214140039512137/1212834333270737026/ruben_p_software_development_professional_web_image_clean_night_8ff0468d-d13d-4a82-829d-8ecf38cfc098.png?ex=65f346fe&is=65e0d1fe&hm=a519c2a047ccc411c65d2e30caaea8fd2974c7358327a820cb3d6974bc40bfa5&=&format=webp&quality=lossless&width=810&height=810"
                   }
                   alt="Product screenshot"
-                  className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[48rem] md:-ml-4 lg:-ml-0 z-20"
+                  className="w-[32rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20"
                   width={2432}
                   height={1444}
                 />

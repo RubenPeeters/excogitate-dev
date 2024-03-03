@@ -83,8 +83,8 @@ export default function DataGovernance() {
             height={1444}
           />
         </div>
-        <Contact></Contact>
       </div>
+      <Contact></Contact>
     </div>
   );
 }

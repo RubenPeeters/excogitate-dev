@@ -83,8 +83,8 @@ export default function SoftwareEngineer() {
             height={1444}
           />
         </div>
-        <Contact></Contact>
       </div>
+      <Contact></Contact>
     </div>
   );
 }

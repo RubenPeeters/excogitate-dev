@@ -138,7 +138,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/aspect-ratio"), addVariablesForColors, function ({ matchUtilities, theme }: any) {
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/aspect-ratio"), addVariablesForColors, require('@tailwindcss/forms'),function ({ matchUtilities, theme }: any) {
     matchUtilities(
       {
         "bg-grid": (value: any) => ({
