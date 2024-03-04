@@ -5,60 +5,51 @@ import { Services } from "@/components/custom/services";
 import { Testimonials } from "@/components/custom/testimonies";
 import Image from "next/image";
 
-import {
-  MagnifyingGlassCircleIcon,
-  WrenchScrewdriverIcon,
-  UserIcon,
-  LightBulbIcon,
-  GlobeEuropeAfricaIcon,
-  ComputerDesktopIcon,
-  AdjustmentsHorizontalIcon,
-} from "@heroicons/react/20/solid";
+import { CheckIcon } from "@heroicons/react/20/solid";
 import { useTheme } from "next-themes";
 
 const software_features = [
   {
-    name: "Custom websites.",
-    description: "Development of the website of your dreams.",
-    icon: GlobeEuropeAfricaIcon,
+    name: "Web interfaces.",
+    description: "Create visibility for your data and your company.",
+    icon: CheckIcon,
   },
   {
     name: "Desktop applications.",
-    description:
-      "Transforming visions into powerful desktop applications: intuitive, efficient, empowering.",
-    icon: ComputerDesktopIcon,
+    description: "Have easy discussions with your data.",
+    icon: CheckIcon,
   },
   {
     name: "Refactoring.",
-    description: "Old code that needs refactoring? Sign us up.",
-    icon: AdjustmentsHorizontalIcon,
+    description: "Efficient updating of applications.",
+    icon: CheckIcon,
   },
 ];
 
 const data_features = [
   {
-    name: "Insights & Predictions.",
+    name: "System Architecture.",
     description:
-      "Utilize advanced analytics to generate insights and predictive models for informed decision-making.",
-    icon: LightBulbIcon,
+      "Determining the overall structure, components, and interactions.",
+    icon: CheckIcon,
   },
   {
-    name: "Problem Solving & Innovation.",
+    name: "Collection and Integration.",
     description:
-      "Address business challenges and drive innovation by uncovering opportunities through data analysis.",
-    icon: WrenchScrewdriverIcon,
+      "Setting up data pipelines, integrating with external APIs, and connecting to internal databases.",
+    icon: CheckIcon,
   },
   {
-    name: "Strategic Guidance.",
+    name: "Storage and Management.",
     description:
-      "Offer strategic support by interpreting data on consumer behavior, market trends, and operational efficiency.",
-    icon: MagnifyingGlassCircleIcon,
+      "Designing databases and data warehouses to store and manage the collected data effectively.",
+    icon: CheckIcon,
   },
   {
-    name: "Collaborative Solutions.",
+    name: "Data Processing and Analysis.",
     description:
-      "Work across teams to deploy data-driven solutions, optimizing processes and enhancing decision-making.",
-    icon: UserIcon,
+      "Implementing algorithms and techniques to process and analyze the collected data.",
+    icon: CheckIcon,
   },
 ];
 
@@ -71,23 +62,24 @@ export default function Home() {
           <Hero></Hero>
         </div>
 
-        <div className="overflow-hidden py-48">
+        <div id="information" className="overflow-hidden py-48">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center">
-                    Make informed decisions using data.
+                    The Data Lifecycle
                   </p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 text-center">
-                    Generate insights, create value
+                  <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 text-center">
+                    To get the most value from your data, all parts of the
+                    lifecycle need to be carefully designed and optimized.
                   </p>
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {data_features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900 dark:text-white">
+                        <dt className="inline font-semibold text-blue-600 dark:text-blue-500">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 text-blue-600 dark:text-blue-500"
+                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-green-600 bg-green-200 dark:text-green-400 dark:bg-green-700"
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -114,7 +106,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col items-center max-w-full">
-        <div className="overflow-hidden bg-gradient-to-l dark:to-blue-900 from-50% dark:from-blue-800 to-blue-500  from-blue-300 py-48 rounded-lg">
+        <div className="overflow-hidden dark:bg-gradient-to-r bg-gradient-to-l dark:from-blue-800 dark:to-slate-900 dark:from-10%  to-blue-300  from-blue-100 py-48 rounded-lg">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:ml-auto lg:pl-4 lg:pt-4">
@@ -122,7 +114,7 @@ export default function Home() {
                   <p className="mt-2 text-3xl font-bold tracking-tight dark:text-white text-gray-900 sm:text-4xl text-center">
                     Software Engineering
                   </p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 text-center">
+                  <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 text-center">
                     Generate traction for your company through an eye-catching
                     website, or automate complex systems through fit-for-purpose
                     software.
@@ -130,9 +122,9 @@ export default function Home() {
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {software_features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900 dark:text-white">
+                        <dt className="inline font-semibold text-blue-600 dark:text-blue-400">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 text-blue-600 dark:text-black"
+                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-green-600 bg-green-200 dark:text-green-400 dark:bg-green-700 "
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -164,9 +156,6 @@ export default function Home() {
         </div>
         <div className=" w-full">
           <Contact></Contact>
-        </div>
-        <div className=" w-full py-40">
-          <Testimonials></Testimonials>
         </div>
 
         <div className=" w-full"></div>

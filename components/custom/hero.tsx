@@ -30,13 +30,31 @@ export default function Hero() {
         />
       </svg>
 
-      <div className="h-screen w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="text-7xl lg:text-8xl font-bold text-center dark:text-white relative z-20 underline  decoration-blue-500">
-          PragmiX
-        </h1>
-        <p className="mt-6 text-lg lg:text-xl leading-8 text-gray-600 dark:text-gray-300 text-center max-w-5xl m-6 py-4 z-20">
-          Data & Software - Solutions & Strategy
-        </p>
+      <div className="mx-auto max-w-2xl py-32 px-2">
+        <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+        <div className="text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-6xl">
+            Data-Driven Innovation for Your Business
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+            Unlock growth and efficiency through our unique blend of software
+            engineering and data expertise.
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#services"
+              className="rounded-md bg-blue-400 dark:bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Get started
+            </a>
+            <a
+              href="#information"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200"
+            >
+              Learn more <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
