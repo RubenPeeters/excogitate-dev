@@ -27,14 +27,14 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group  block p-4 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-blue-200 dark:bg-blue-800 block rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-slate-100 dark:bg-slate-800 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -68,7 +68,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white dark:bg-slate-950 border-b border-blue-400 dark:border-blue-800 relative z-20",
+        "rounded-2xl h-full w-full p-1 overflow-hidden bg-blue-100 dark:bg-slate-900 border border-blue-700 dark:border-blue-900 relative z-20",
         className
       )}
     >
@@ -88,7 +88,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "dark:text-zinc-100 font-bold tracking-wide mt-4 text-center",
+        "dark:text-blue-100 text-blue-700 font-bold tracking-wide mt-2 text-center",
         className
       )}
     >
@@ -106,7 +106,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm text-center",
+        "mt-8 text-blue-500 dark:text-blue-400 tracking-wide leading-relaxed text-sm text-center",
         className
       )}
     >

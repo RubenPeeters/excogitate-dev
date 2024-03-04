@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="w-screen h-screen">
+        <div className="w-screen py-32">
           <Hero></Hero>
         </div>
 
@@ -105,8 +105,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center max-w-full">
-        <div className="overflow-hidden dark:bg-gradient-to-r bg-gradient-to-l dark:from-blue-800 dark:to-slate-950 dark:from-10%  to-blue-300  from-blue-100 py-48 rounded-lg">
+      <div className="flex flex-col items-center max-w-full bg-gradient-to-r dark:from-blue-800 dark:to-slate-950 to-white  from-blue-100 py-48 rounded-lg">
+        <div className="overflow-hidden ">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:ml-auto lg:pl-4 lg:pt-4">
@@ -151,12 +151,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-screen-2xl py-64">
-          <Services></Services>
-        </div>
-        <div className=" w-full">
-          <Contact></Contact>
-        </div>
+      </div>
+
+      <div className="w-full py-32">
+        <Services></Services>
+      </div>
+      <div className=" w-full">
+        <Contact></Contact>
       </div>
     </>
   );
