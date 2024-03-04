@@ -97,7 +97,7 @@ export default function Home() {
                     : "https://media.discordapp.net/attachments/1035214140039512137/1212519457629536307/ruben_p_data_professional_web_image_clean_e5c073b1-5599-4a7c-a5fa-074af3b171a9.png?ex=65f221be&is=65dfacbe&hm=050e84a084454fc3370f289deaa835325cfc08a9bb9fb4e847bfaadced9a5e30&=&format=webp&quality=lossless&width=700&height=700"
                 }
                 alt="Product screenshot"
-                className="w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20"
+                className="lg:flex w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20 hidden"
                 width={1444}
                 height={1000}
               />
@@ -135,7 +135,7 @@ export default function Home() {
                   </dl>
                 </div>
               </div>
-              <div className="flex items-start justify-end lg:order-first">
+              <div className="lg:flex items-start justify-end lg:order-first hidden">
                 <Image
                   src={
                     theme == "light"
@@ -157,8 +157,6 @@ export default function Home() {
         <div className=" w-full">
           <Contact></Contact>
         </div>
-
-        <div className=" w-full"></div>
       </div>
     </>
   );
