@@ -14,50 +14,48 @@ import Image from "next/image";
 
 const features = [
   {
-    name: "Insights & Predictions.",
+    name: "Data Interpretation.",
     description:
-      "Utilize advanced analytics to generate insights and predictive models for informed decision-making.",
+      "Analyze data to uncover patterns, trends, and insights that inform decision-making.",
     icon: LightBulbIcon,
   },
   {
-    name: "Problem Solving & Innovation.",
+    name: "Report Generation.",
     description:
-      "Address business challenges and drive innovation by uncovering opportunities through data analysis.",
+      "Create clear and concise reports and visualizations to communicate findings to stakeholders.",
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Strategic Guidance.",
+    name: "Performance Monitoring.",
     description:
-      "Offer strategic support by interpreting data on consumer behavior, market trends, and operational efficiency.",
+      "Track key metrics and performance indicators to assess the effectiveness of strategies and initiatives.",
     icon: MagnifyingGlassCircleIcon,
   },
   {
-    name: "Collaborative Solutions.",
+    name: "Insightful Recommendations.",
     description:
-      "Work across teams to deploy data-driven solutions, optimizing processes and enhancing decision-making.",
+      "Provide actionable recommendations based on data analysis to drive business growth and improvement.",
     icon: UserIcon,
   },
 ];
 
-export default function DataScience() {
+export default function DataLifecycle() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div>
-      <div className="flex justify-center p-4">
-        <Navbar></Navbar>
-      </div>
+    <>
       <div className="overflow-hidden bg-white dark:bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                  Data Science
+                  Data Analytics
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                  Unlock insights, solve problems, get guidance, and collaborate
-                  to make smart decisions using data.
+                  Interpret data, generate reports, monitor performance, and
+                  offer actionable insights to drive business growth and
+                  improvement.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                   {features.map((feature) => (
@@ -78,8 +76,8 @@ export default function DataScience() {
             <Image
               src={
                 theme == "light"
-                  ? "https://media.discordapp.net/attachments/1035214140039512137/1211392385108410440/ruben_p_data_science_in_the_21st_century_minimalist_clean_simpl_fff60e5f-63e3-4713-81e2-9fa29c0b63af.png?ex=65ee0813&is=65db9313&hm=a50f6f699dc89bd207413434a010c04c030d9f29512fa38b22f59d5324eebd35&=&format=webp&quality=lossless&width=905&height=905"
-                  : "https://media.discordapp.net/attachments/1035214140039512137/1211435993874563133/ruben_p_data_governance_in_the_21st_century_minimalist_clean_ab_5a79cd1b-5e2d-47e2-8083-661d82edfcf7.png?ex=65ee30b0&is=65dbbbb0&hm=44edb30634e7bdc326f84436731e17bd0bc08c5f1746fea79f606a6e081a833e&=&format=webp&quality=lossless&width=810&height=810"
+                  ? "https://media.discordapp.net/attachments/1035214140039512137/1211385589824487525/ruben_p_data_analysis_in_the_21st_century_minimalist_clean_simp_fc820099-0859-4dcb-825b-6e27eac6bb26.png?ex=65ee01bf&is=65db8cbf&hm=d4144e15f67194d3cb9729fd7753dc1ebe98c3987149cbe9d9bfb0cb5068cd1a&=&format=webp&quality=lossless&width=905&height=905"
+                  : "https://media.discordapp.net/attachments/1035214140039512137/1211437045931843614/ruben_p_data_science_in_the_21st_century_minimalist_clean_abstr_24ff5b5c-617a-43a4-b51c-ce81af66ed67.png?ex=65ee31ab&is=65dbbcab&hm=ff0494fd781ac1637c3598acf04f0ca5ff80c226dfd8380668db83602eab9a21&=&format=webp&quality=lossless&width=810&height=810"
               }
               alt="Product screenshot"
               className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[48rem] md:-ml-4 lg:-ml-0 z-20"
@@ -90,6 +88,6 @@ export default function DataScience() {
         </div>
         <Contact></Contact>
       </div>
-    </div>
+    </>
   );
 }

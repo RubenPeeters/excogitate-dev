@@ -15,44 +15,34 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ThemeSwitcher } from "./theme-switcher";
 import Image from "next/image";
-
+export const projects = [];
 const services: { title: string; href: string; description: string }[] = [
   {
-    title: "Data Science",
-    href: "/data-science",
-    description: "Use AI models to create value from your data.",
+    title: "End-to-end Solutions",
+    description: "The Data Lifecycle, start to finish.",
+    href: "/data-lifecycle",
   },
   {
-    title: "Data Analytics",
-    href: "/data-analytics",
-    description: "Extract valuable insights from your data.",
+    title: "Applications",
+    description: "Web or Desktop versions of your idea.",
+    href: "/applications",
   },
   {
-    title: "Data Engineering",
-    href: "/data-engineering",
-    description: "Streamline your data pipelines.",
+    title: "Data Consultancy",
+    description: "Guidance on any part of the Data Lifecycle.",
+    href: "/data-consultancy",
   },
   {
-    title: "Web Development",
-    href: "/web-development",
-    description: "Create visibility and traction for your company.",
-  },
-  {
-    title: "Software Engineering",
-    href: "/software-engineering",
-    description: "Automate your business processes.",
-  },
-  {
-    title: "Data Governance",
-    href: "/data-governance",
-    description: "Lower costs through data quality.",
+    title: "Software Consultancy",
+    description: "Guidance on development best practices.",
+    href: "/software-consultancy",
   },
 ];
 
 export function Navbar() {
   return (
     <div
-      className="flex items-center justify-between align-baseline p-6 lg:px-8 w-full max-w-5xl"
+      className="flex items-center justify-evenly align-baseline p-6 lg:px-8 w-full max-w-7xl"
       aria-label="Global"
     >
       <div className="flex lg:flex-1">
@@ -72,14 +62,6 @@ export function Navbar() {
       <NavigationMenu className="z-50">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Home
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
             <NavigationMenuTrigger>Services</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] z-50">
@@ -95,10 +77,11 @@ export function Navbar() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+
           <NavigationMenuItem>
-            <Link href="/contact" legacyBehavior passHref>
+            <Link href="/blog" legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Contact
+                Blog
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -109,9 +92,18 @@ export function Navbar() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/contact" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Contact
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
         </NavigationMenuList>
-        <ThemeSwitcher />
       </NavigationMenu>
+      <div>
+        <ThemeSwitcher />
+      </div>
     </div>
   );
 }

@@ -5,41 +5,30 @@ import { HoverEffect } from "../ui/card-hover-effect";
 
 export const projects = [
   {
-    title: "Data Science",
-    description: "Use AI models to create value from your data.",
-    link: "/data-science",
+    title: "End-to-end Solutions",
+    description: "The Data Lifecycle, start to finish.",
+    link: "/data-lifecycle",
   },
   {
-    title: "Data Engineering",
-    description: "Streamline your data pipelines.",
-    link: "/data-engineering",
+    title: "Applications",
+    description: "Web or Desktop versions of your idea.",
+    link: "/applications",
   },
   {
-    title: "Data Analytics",
-    description: "Extract valuable insights from your data.",
-    link: "/data-analytics",
+    title: "Data Consultancy",
+    description: "Guidance on any part of the Data Lifecycle.",
+    link: "/data-consultancy",
   },
   {
-    title: "Data Governance",
-    description: "Lower costs through data quality.",
-    link: "/data-governance",
-  },
-  {
-    title: "Software Engineering",
-    description:
-      "Automate your business processes through scripting and software.",
-    link: "/software-engineering",
-  },
-  {
-    title: "Web Development",
-    description: "Create visibility and traction for your company.",
-    link: "/web-development",
+    title: "Software Consultancy",
+    description: "Guidance on development best practices.",
+    link: "/software-consultancy",
   },
 ];
 
 export function Services() {
   return (
-    <div id="services" className="max-w-5xl mx-auto px-24">
+    <div id="services" className="max-w-3xl mx-auto px-24">
       <h1 className="text-4xl font-bold text-center dark:text-white text-gray-900 relative pb-16 z-20">
         What we offer...
       </h1>

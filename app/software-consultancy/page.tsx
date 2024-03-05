@@ -13,32 +13,32 @@ import Image from "next/image";
 
 const features = [
   {
-    name: "Data Oversight.",
+    name: "Software Development.",
     description:
-      "Manage and ensure the quality, integrity, and security of organizational data assets.",
+      "Design, develop, and maintain software applications to meet specific user needs and business requirements.",
     icon: LightBulbIcon,
   },
   {
-    name: "Policy Development.",
+    name: "Code Implementation.",
     description:
-      "Develop and enforce data governance policies, standards, and procedures to ensure compliance with regulations and best practices.",
+      "Write clean, efficient, and maintainable code using programming languages and frameworks.",
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Data Documentation.",
+    name: "Testing & Debugging.",
     description:
-      "Document data processes, metadata, and lineage to facilitate understanding and usage across the organization.",
+      "Conduct thorough testing and debugging to ensure software reliability, functionality, and security.",
     icon: MagnifyingGlassCircleIcon,
   },
   {
-    name: "Stakeholder Education.",
+    name: "Continuous Improvement.",
     description:
-      "Educate and train stakeholders on FAIR data governance principles and best practices to promote data-driven decision-making.",
+      "Continuously update and improve software to adapt to changing technologies and user feedback.",
     icon: UserIcon,
   },
 ];
 
-export default function DataGovernance() {
+export default function SoftwareConsultancy() {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -48,12 +48,12 @@ export default function DataGovernance() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                Data Governance
+                Software Engineering
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                Oversee data quality, develop policies, document processes, and
-                educate stakeholders to ensure effective data management and
-                compliance.
+                Software engineers design, develop, test, and improve software
+                applications to meet user needs and ensure reliability and
+                security.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                 {features.map((feature) => (
@@ -74,8 +74,8 @@ export default function DataGovernance() {
           <Image
             src={
               theme == "light"
-                ? "https://media.discordapp.net/attachments/1035214140039512137/1211397360182366279/ruben_p_data_analysis_in_the_21st_century_minimalist_clean_simp_ea498bcb-ae6a-4b13-9327-289b5bb5757e.png?ex=65ee0cb5&is=65db97b5&hm=fb4d1625d60ba7223693925b408095bf01add4064807f42e5edbc16d4554f5bf&=&format=webp&quality=lossless&width=810&height=810"
-                : "https://media.discordapp.net/attachments/1035214140039512137/1211436856743301140/ruben_p_data_governance_in_the_21st_century_minimalist_clean_ab_0cb8c7fe-7c25-4481-9fb6-5441a1f4b5d6.png?ex=65ee317e&is=65dbbc7e&hm=cea8dfca9fccb366c4025f840cb4278876b6e4bdfb812f9c79c45c2733cecbf3&=&format=webp&quality=lossless&width=810&height=810"
+                ? "https://media.discordapp.net/attachments/1035214140039512137/1211393906516697229/ruben_p_data_governance_in_the_21st_century_minimalist_clean_si_2fdd998b-bf5a-460b-a749-3b33f7588d63.png?ex=65ee097d&is=65db947d&hm=dd318536813af5f6b7d3c101d21fd7f573997b386189e75a40d7fda565454422&=&format=webp&quality=lossless&width=905&height=905"
+                : "https://media.discordapp.net/attachments/1035214140039512137/1211440166116532235/ruben_p_data_science_in_the_21st_century_minimalist_clean_abstr_c62935a2-abb0-4c95-9ca6-143a3a88a92a.png?ex=65ee3493&is=65dbbf93&hm=5684727c422f0ac1a3b4d4a1841298926d0d995c6a5a8ce62ff24decc578b777&=&format=webp&quality=lossless&width=810&height=810"
             }
             alt="Product screenshot"
             className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[48rem] md:-ml-4 lg:-ml-0 z-20"

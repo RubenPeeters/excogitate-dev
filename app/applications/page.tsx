@@ -41,7 +41,7 @@ const features = [
   },
 ];
 
-export default function WebDev() {
+export default function Applications() {
   const { theme, setTheme } = useTheme();
 
   return (

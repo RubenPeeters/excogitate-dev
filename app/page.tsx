@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="w-screen py-32">
+        <div className="w-screen max-w-7xl py-32">
           <Hero></Hero>
         </div>
 
