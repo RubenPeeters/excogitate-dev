@@ -56,15 +56,16 @@ export function Navbar() {
       aria-label="Global"
     >
       <div className="flex lg:flex-1">
-        <a href="/" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
+        <a href="/" className="flex justify-center items-center -m-1.5 p-1.5">
+          <span className="sr-only">PragmiX</span>
           <Image
-            className="h-8 w-auto"
-            src="logo-dark.svg"
-            alt=""
-            width={500}
-            height={500}
+            className="h-16 w-auto"
+            src="owl-logo-2.svg"
+            alt="logo"
+            width={1000}
+            height={1000}
           />
+          <p className="text-3xl font-bold p-4">PragmiX</p>
         </a>
       </div>
 
