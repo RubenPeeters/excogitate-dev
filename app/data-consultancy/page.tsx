@@ -58,7 +58,7 @@ export default function DataConsultancy() {
               stewardship, I can help you navigate the complexities of data
               analysis, visualization, and strategy, ensuring your data is not
               just big, but
-              <span className="font-bold text-blue-500">
+              <span className="font-bold text-lime-500">
                 {" "}
                 smart and actionable.
               </span>
@@ -66,7 +66,7 @@ export default function DataConsultancy() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#contact"
-                className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-lime-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-400"
               >
                 Get started
               </a>
@@ -88,9 +88,9 @@ export default function DataConsultancy() {
                 <dl className="mt-10 max-w-xl space-y-8 text-xl leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9 py-4">
-                      <dt className="inline font-semibold text-blue-600 dark:text-blue-500">
+                      <dt className="inline font-semibold text-amber-600 dark:text-amber-500">
                         <feature.icon
-                          className="absolute left-1 top-5 h-5 w-5 p-1 rounded-full text-green-600 bg-green-200 dark:text-green-400 dark:bg-green-700"
+                          className="absolute left-1 top-5 h-5 w-5 p-1 rounded-full text-lime-700 bg-lime-300 dark:text-lime-400 dark:bg-lime-700"
                           aria-hidden="true"
                         />
                         {feature.name}

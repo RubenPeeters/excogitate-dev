@@ -67,13 +67,13 @@ export default function Steps({ steps }: ComponentProps) {
             <>
               {stepIdx !== steps.length - 1 ? (
                 <div
-                  className="absolute left-8 top-8 -ml-px mt-0.5 h-full w-0.5 bg-blue-700"
+                  className="absolute left-8 top-8 -ml-px mt-0.5 h-full w-0.5 bg-lime-700"
                   aria-hidden="true"
                 />
               ) : null}
               <div className="group relative flex items-start">
                 <span className="flex h-20 items-center">
-                  <span className="relative z-10 flex h-16 w-16 text-3xl font-medium items-center justify-center rounded-full bg-blue-200 text-blue-600">
+                  <span className="relative z-10 flex h-16 w-16 border border-lime-500 text-3xl font-medium items-center justify-center rounded-full bg-lime-200 text-lime-600">
                     {stepIdx + 1}
                   </span>
                 </span>

@@ -76,9 +76,9 @@ export default function Home() {
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {data_features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-blue-600 dark:text-blue-500">
+                        <dt className="inline font-semibold text-amber-600 dark:text-amber-500">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-green-600 bg-green-200 dark:text-green-400 dark:bg-green-700"
+                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-lime-700 bg-lime-300 dark:text-lime-400 dark:bg-lime-700"
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center max-w-full bg-gradient-to-r dark:from-blue-800 dark:to-slate-950 to-white  from-blue-100 py-48 rounded-lg">
+      <div className="flex flex-col items-center max-w-full bg-gradient-to-br dark:from-amber-800 dark:to-slate-950 to-white  from-amber-100 py-48 rounded-lg">
         <div className="overflow-hidden ">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -121,9 +121,9 @@ export default function Home() {
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {software_features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-blue-600 dark:text-blue-400">
+                        <dt className="inline font-semibold text-amber-600 dark:text-amber-400">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-green-600 bg-green-200 dark:text-green-400 dark:bg-green-700 "
+                            className="absolute left-1 top-1 h-5 w-5 p-1 rounded-full text-lime-700 bg-lime-300 dark:text-lime-400 dark:bg-lime-700 "
                             aria-hidden="true"
                           />
                           {feature.name}

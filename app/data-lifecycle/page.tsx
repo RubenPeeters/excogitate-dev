@@ -55,7 +55,7 @@ export default function DataLifecycle() {
             </h1>
             <p className="mt-6 mx-auto text-lg leading-8 text-gray-200 max-w-3xl">
               I offer comprehensive end-to-end solutions that cover{" "}
-              <span className="text-blue-500 font-bold">
+              <span className="text-lime-500 font-bold">
                 the full lifecycle of software and data projects.
               </span>{" "}
               From initial concept and strategy through development, deployment,
@@ -65,7 +65,7 @@ export default function DataLifecycle() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#contact"
-                className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-lime-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-400"
               >
                 Get started
               </a>

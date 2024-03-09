@@ -62,7 +62,7 @@ export default function Services() {
               className={classNames(
                 action.iconBackground,
                 action.iconForeground,
-                "inline-flex rounded-lg p-3 ring-4 ring-white dark:ring-slate-950 bg-blue-300 text-blue-600"
+                "inline-flex rounded-lg p-3 ring-4 ring-white dark:ring-slate-950 bg-lime-200 text-lime-600 dark:bg-lime-700 dark:text-lime-100"
               )}
             >
               <action.icon className="h-6 w-6 " aria-hidden="true" />
