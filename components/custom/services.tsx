@@ -14,32 +14,32 @@ export const actions = [
     description: "The Data Lifecycle, start to finish.",
     href: "/data-lifecycle",
     icon: LightBulbIcon,
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-lime-600 dark:text-lime-100",
+    iconBackground: "bg-lime-200 dark:bg-lime-700",
   },
   {
     title: "Application Development",
     description: "Web or desktop versions of your idea.",
     href: "/applications",
     icon: Cog6ToothIcon,
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-lime-600 dark:text-lime-100",
+    iconBackground: "bg-lime-200 dark:bg-lime-700",
   },
   {
     title: "Data Consultancy",
     description: "Guidance on any part of the Data Lifecycle.",
     href: "/data-consultancy",
     icon: ChartBarIcon,
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-lime-600 dark:text-lime-100",
+    iconBackground: "bg-lime-200 dark:bg-lime-700",
   },
   {
     title: "Software Consultancy",
     description: "Guidance on development best practices.",
     href: "/software-consultancy",
     icon: BookOpenIcon,
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
+    iconForeground: "text-lime-600 dark:text-lime-100",
+    iconBackground: "bg-lime-200 dark:bg-lime-700",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Services() {
         <div
           key={action.title}
           className={classNames(
-            "group text-center relative shadow bg-white dark:bg-slate-950 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-400"
+            "group text-center relative shadow bg-white dark:bg-slate-950 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-lime-400"
           )}
         >
           <div>
@@ -62,7 +62,7 @@ export default function Services() {
               className={classNames(
                 action.iconBackground,
                 action.iconForeground,
-                "inline-flex rounded-lg p-3 ring-4 ring-white dark:ring-slate-950 bg-lime-200 text-lime-600 dark:bg-lime-700 dark:text-lime-100"
+                "inline-flex rounded-lg p-3 ring-4 ring-white dark:ring-slate-950 "
               )}
             >
               <action.icon className="h-6 w-6 " aria-hidden="true" />
