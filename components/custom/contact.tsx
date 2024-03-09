@@ -16,7 +16,7 @@ export function Contact() {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="/contact"
-              className="rounded-md dark:bg-white bg-slate-950 px-3.5 py-2.5 text-sm font-semibold text-white dark:text-gray-900 shadow-sm dark:hover:bg-slate-200 hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
             >
               Reach out
             </a>

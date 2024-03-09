@@ -1,8 +1,7 @@
 "use client";
 import { Contact } from "@/components/custom/contact";
 import Hero from "@/components/custom/hero";
-import { Services } from "@/components/custom/services";
-import { Testimonials } from "@/components/custom/testimonies";
+import Services from "@/components/custom/services";
 import Image from "next/image";
 
 import { CheckIcon } from "@heroicons/react/20/solid";
@@ -58,7 +57,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <div className="w-screen max-w-7xl py-32">
+        <div className="w-screen pb-32">
           <Hero></Hero>
         </div>
 
