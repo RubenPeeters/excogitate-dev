@@ -152,10 +152,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full py-32">
+      <div id="services" className="w-full py-32">
         <Services></Services>
       </div>
-      <div className=" w-full">
+      <div className="w-full">
         <Contact></Contact>
       </div>
     </>
