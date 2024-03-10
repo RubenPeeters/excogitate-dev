@@ -9,45 +9,53 @@ import { useTheme } from "next-themes";
 
 const software_features = [
   {
-    name: "Web interfaces.",
-    description: "Create visibility for your data and your company.",
+    name: "Custom Software.",
+    description:
+      "Tailored solutions that align with your goals, built for impact.",
     icon: CheckIcon,
   },
   {
-    name: "Desktop applications.",
-    description: "Have easy discussions with your data.",
+    name: "AI & ML Innovations.",
+    description:
+      "Harness AI and ML for deeper insights, automation, and improved decision-making.",
     icon: CheckIcon,
   },
   {
-    name: "Refactoring.",
-    description: "Efficient updating of applications.",
+    name: "Web Development.",
+    description:
+      "Secure, scalable web applications designed for engagement and performance.",
+    icon: CheckIcon,
+  },
+  {
+    name: "Tools & Automation.",
+    description:
+      "Streamline operations with custom tools for data management and analysis, enhancing efficiency.",
     icon: CheckIcon,
   },
 ];
 
 const data_features = [
   {
-    name: "System Architecture.",
+    name: "Data Engineering.",
     description:
-      "Determining the overall structure, components, and interactions.",
+      "Optimize your data processes for superior performance and scalability.",
     icon: CheckIcon,
   },
   {
-    name: "Collection and Integration.",
+    name: "Governance & Compliance.",
     description:
-      "Setting up data pipelines, integrating with external APIs, and connecting to internal databases.",
+      "Align data practices with industry standards through strategic governance.",
     icon: CheckIcon,
   },
   {
-    name: "Storage and Management.",
+    name: "FAIR Data.",
     description:
-      "Designing databases and data warehouses to store and manage the collected data effectively.",
+      "Enhance data's value with FAIR principles, making it more usable and valuable.",
     icon: CheckIcon,
   },
   {
-    name: "Data Processing and Analysis.",
-    description:
-      "Implementing algorithms and techniques to process and analyze the collected data.",
+    name: "Empowerment through Knowledge.",
+    description: "Elevate data literacy with tailored workshops and training.",
     icon: CheckIcon,
   },
 ];
@@ -67,11 +75,12 @@ export default function Home() {
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl text-center">
-                    The Data Lifecycle
+                    Elevate Your Data
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 text-center">
-                    To get the most value from your data, all parts of the
-                    lifecycle need to be carefully designed and optimized.
+                    Improve efficiency and insights with expert data services.
+                    With data engineering, governance, and FAIR principles, we
+                    turn your data into a strategic asset, together.
                   </p>
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {data_features.map((feature) => (
@@ -107,12 +116,11 @@ export default function Home() {
               <div className="lg:ml-auto lg:pl-4 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight dark:text-white text-gray-900 sm:text-4xl text-center">
-                    Software Engineering
+                    Tailored Software Solutions
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400 text-center">
-                    Generate traction for your company through an eye-catching
-                    website, or automate complex systems through fit-for-purpose
-                    software.
+                    Boost your business with bespoke software, leveraging AI/ML
+                    and engineering for significant and enduring impact.
                   </p>
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {software_features.map((feature) => (
