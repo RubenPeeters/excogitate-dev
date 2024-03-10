@@ -49,7 +49,7 @@ export default function DataLifecycle() {
         />
 
         <div className="mx-auto pt-24 pb-36 max-w-7xl">
-          <div className="text-center backdrop-blur-md p-24 dark:backdrop-brightness-50 backdrop-brightness-75  rounded-xl ">
+          <div className="text-center backdrop-blur-md px-6 py-16 dark:backdrop-brightness-50 backdrop-brightness-75  rounded-xl ">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
               End-To-End Solutions
             </h1>

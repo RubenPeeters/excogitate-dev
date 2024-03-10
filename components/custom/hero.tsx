@@ -16,12 +16,12 @@ export default function Hero() {
 
         <div className="mx-auto pt-24 pb-36 max-w-7xl">
           <div className="text-center backdrop-blur-md p-24 dark:backdrop-brightness-50 backdrop-brightness-75  rounded-xl ">
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
-              Data-Driven Innovation for Your Business
+            <h1 className="text-3xl font-bold mx-auto tracking-tight text-white sm:text-6xl max-w-xl">
+              Unlock Potential, <span className="text-amber-300">Ignite</span>{" "}
+              Innovation
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">
-              Unlock growth and efficiency through our unique blend of software
-              engineering and data expertise.
+              Custom software and data services for transformative outcomes.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

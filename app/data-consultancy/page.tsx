@@ -49,11 +49,11 @@ export default function DataConsultancy() {
         />
 
         <div className="mx-auto pt-24 pb-36 max-w-7xl">
-          <div className="text-center backdrop-blur-md p-24 dark:backdrop-brightness-50 backdrop-brightness-75  rounded-xl ">
+          <div className="text-center backdrop-blur-md px-6 py-16 sm:p-24 dark:backdrop-brightness-50 backdrop-brightness-75  rounded-xl ">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-6xl">
               Data Consultancy
             </h1>
-            <p className="mt-6 mx-auto text-lg text-left leading-8 text-gray-200 max-w-3xl">
+            <p className="mt-6 mx-auto text-lg text-center leading-8 text-gray-200 max-w-3xl">
               With extensive experience in data engineering, governance, and
               stewardship, I can help you navigate the complexities of data
               analysis, visualization, and strategy, ensuring your data is not

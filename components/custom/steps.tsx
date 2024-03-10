@@ -55,7 +55,7 @@ interface ComponentProps {
 export default function Steps({ steps }: ComponentProps) {
   return (
     <nav aria-label="Progress">
-      <ol role="list" className="overflow-hidden">
+      <ol role="list" className="overflow-hidden px-4">
         {steps.map((step, stepIdx) => (
           <li
             key={step.name}
