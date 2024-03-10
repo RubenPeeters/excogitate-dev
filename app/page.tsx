@@ -90,11 +90,7 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src={
-                  theme == "light"
-                    ? "https://media.discordapp.net/attachments/1035214140039512137/1212519476633935912/ruben_p_data_professional_web_image_clean_aad98243-4055-4947-b198-5577aa4f180d.png?ex=65f221c2&is=65dfacc2&hm=81224d6acf4e846798e3f5ba085dda1da7b8435921bb8cf4b638727452e28abb&=&format=webp&quality=lossless&width=700&height=700"
-                    : "https://media.discordapp.net/attachments/1035214140039512137/1212519457629536307/ruben_p_data_professional_web_image_clean_e5c073b1-5599-4a7c-a5fa-074af3b171a9.png?ex=65f221be&is=65dfacbe&hm=050e84a084454fc3370f289deaa835325cfc08a9bb9fb4e847bfaadced9a5e30&=&format=webp&quality=lossless&width=700&height=700"
-                }
+                src="/data-engineering-front.webp"
                 alt="Product screenshot"
                 className="lg:flex w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20 hidden"
                 width={1444}
@@ -136,11 +132,7 @@ export default function Home() {
               </div>
               <div className="lg:flex items-start justify-end lg:order-first hidden">
                 <Image
-                  src={
-                    theme == "light"
-                      ? "https://media.discordapp.net/attachments/1035214140039512137/1212833674526072942/ruben_p_software_development_professional_web_image_clean_white_b29fbd8e-f2df-4764-981c-1403deb8baaa.png?ex=65f34661&is=65e0d161&hm=da18369904c82931180b816e42d3a0e567105609558735c7c7d3bb2a7698756e&=&format=webp&quality=lossless&width=810&height=810"
-                      : "https://media.discordapp.net/attachments/1035214140039512137/1212834333270737026/ruben_p_software_development_professional_web_image_clean_night_8ff0468d-d13d-4a82-829d-8ecf38cfc098.png?ex=65f346fe&is=65e0d1fe&hm=a519c2a047ccc411c65d2e30caaea8fd2974c7358327a820cb3d6974bc40bfa5&=&format=webp&quality=lossless&width=810&height=810"
-                  }
+                  src="/software-engineering-front.webp"
                   alt="Product screenshot"
                   className="w-[32rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:w-[36rem] md:-ml-4 lg:-ml-0 z-20"
                   width={2432}
