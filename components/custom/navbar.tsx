@@ -21,7 +21,7 @@ import {
   PhoneIcon,
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
-import { Theme } from "@tsparticles/engine";
+import { useTheme } from "next-themes";
 
 export const projects = [];
 const products: {
@@ -72,7 +72,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const { theme, setTheme } = useTheme();
   return (
     <header className="relative isolate z-10 w-full">
       <nav
@@ -83,7 +83,7 @@ export default function Navbar() {
           <a href="/" className="flex flex-row -m-1.5 p-1.5 ">
             <span className="sr-only">PragmiX</span>
             <Image
-              className="h-14 w-14 bg-gradient-radial from-amber-400 dark:from-amber-500 rounded-full p-2"
+              className="h-14 w-14 bg-gradient-radial from-amber-100 rounded-full p-2"
               src="/Ruben Logo_noBG.png"
               alt=""
               width={2400}
