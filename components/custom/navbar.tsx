@@ -80,15 +80,16 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+          <a href="/" className="flex flex-row -m-1.5 p-1.5 ">
+            <span className="sr-only">PragmiX</span>
             <Image
-              className="h-8 w-auto"
-              src="/owl-logo-2.svg"
+              className="h-14 w-14 bg-gradient-radial from-amber-400 dark:from-amber-500 rounded-full p-2"
+              src="/Ruben Logo_noBG.png"
               alt=""
               width={2400}
               height={2400}
             />
+            <p className="m-auto px-4 text-xl font-semibold">PragmiX</p>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -202,10 +203,10 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">PragmiX</span>
               <Image
-                className="h-8 w-auto"
-                src="/owl-logo-2.svg"
+                className="h-14 w-14 bg-gradient-radial from-amber-400 dark:from-amber-500 rounded-full p-2"
+                src="/Ruben Logo_noBG.png"
                 alt=""
                 width={2400}
                 height={2400}

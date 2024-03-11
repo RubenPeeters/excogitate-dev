@@ -136,6 +136,9 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      }
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/aspect-ratio"), addVariablesForColors, require('@tailwindcss/forms'),function ({ matchUtilities, theme }: any) {
