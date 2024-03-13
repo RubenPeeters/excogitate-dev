@@ -21,7 +21,7 @@ export default function Hero() {
               Innovation
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">
-              Custom software and data services for transformative outcomes.
+              Pragmatic software and data services for transformative outcomes.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
