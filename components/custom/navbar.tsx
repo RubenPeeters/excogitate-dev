@@ -83,7 +83,7 @@ export default function Navbar() {
           <a href="/" className="flex flex-row -m-1.5 p-1.5 ">
             <span className="sr-only">PragmiX</span>
             <Image
-              className="h-14 w-14 bg-gradient-radial from-amber-100 rounded-full p-2"
+              className="h-14 w-14 bg-lime-600 rounded-2xl bg-opacity-70 p-2"
               src="/Ruben Logo_noBG.png"
               alt=""
               width={2400}
@@ -121,7 +121,7 @@ export default function Navbar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 -translate-y-1"
             >
-              <Popover.Panel className="absolute inset-x-0 top-0 -z-10 bg-white dark:bg-slate-950 pt-14  ring-gray-900/5">
+              <Popover.Panel className="absolute inset-x-0 top-0 -z-10 bg-white dark:bg-slate-950 pt-20  ring-gray-900/5">
                 <div className="mx-auto grid max-w-7xl grid-cols-4 gap-x-4 px-6 py-10 lg:px-8 xl:gap-x-8">
                   {products.map((item) => (
                     <div
@@ -200,12 +200,12 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">PragmiX</span>
               <Image
-                className="h-14 w-14 bg-gradient-radial from-amber-400 dark:from-amber-500 rounded-full p-2"
+                className="h-14 w-14 bg-lime-600 rounded-2xl bg-opacity-70 p-2"
                 src="/Ruben Logo_noBG.png"
                 alt=""
                 width={2400}
