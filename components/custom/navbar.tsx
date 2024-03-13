@@ -79,17 +79,20 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a href="/" className="flex flex-row -m-1.5 p-1.5 ">
+        <div className="flex lg:flex-1 ">
+          <a
+            href="/"
+            className="flex flex-row -m-1.5 px-2 py-2.5 bg-amber-400 rounded-2xl bg-opacity-70"
+          >
             <span className="sr-only">PragmiX</span>
             <Image
-              className="h-14 w-14 bg-lime-600 rounded-2xl bg-opacity-70 p-2"
+              className="h-8 w-8"
               src="/Ruben Logo_noBG.png"
               alt=""
               width={2400}
               height={2400}
             />
-            <p className="m-auto px-4 text-xl font-semibold">PragmiX</p>
+            <p className="m-auto text-lg pl-2 font-semibold">PragmiX</p>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -104,7 +107,7 @@ export default function Navbar() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover>
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-50">
+            <Popover.Button className="flex items-center gap-x-1 text-sm bg-white dark:bg-slate-950 font-semibold leading-6 text-gray-900 dark:text-gray-50">
               Services
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400 dark:text-gray-700"
@@ -200,12 +203,15 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-slate-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
+            <a
+              href="/"
+              className="flex flex-row -m-1.5 px-2 py-2.5 bg-amber-400 rounded-2xl bg-opacity-70"
+            >
               <span className="sr-only">PragmiX</span>
               <Image
-                className="h-14 w-14 bg-lime-600 rounded-2xl bg-opacity-70 p-2"
+                className="h-8 w-8"
                 src="/Ruben Logo_noBG.png"
                 alt=""
                 width={2400}
