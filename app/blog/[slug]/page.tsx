@@ -3,7 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { Button } from "@/components/ui/button";
+
+import Table from "@/components/mdx/table";
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blog"));
@@ -22,7 +23,6 @@ function getPost({ slug }: { slug: string }) {
   );
 
   const { data: frontMatter, content } = matter(markdownFile);
-
   return {
     frontMatter,
     slug,
@@ -34,7 +34,7 @@ export default function Post({ params }: any) {
   const props = getPost(params);
 
   return (
-    <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate !prose-invert mx-auto">
+    <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
       <h1>{props.frontMatter.title}</h1>
       <MDXRemote source={props.content} />
     </article>
