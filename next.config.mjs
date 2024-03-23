@@ -31,6 +31,7 @@ const nextConfig = {
           },
       ],
     },
+    pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 }
 
 const withMDX = createMDX({

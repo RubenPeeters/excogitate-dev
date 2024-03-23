@@ -36,7 +36,7 @@ export default function Post({ params }: any) {
   return (
     <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
       <h1>{props.frontMatter.title}</h1>
-      <MDXRemote source={props.content} />
+      <MDXRemote source={props.content} components={{ Table }} />
     </article>
   );
 }
