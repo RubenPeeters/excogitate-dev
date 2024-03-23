@@ -22,6 +22,7 @@ import {
   RectangleGroupIcon,
 } from "@heroicons/react/20/solid";
 import { useTheme } from "next-themes";
+import { MailCheckIcon, MailIcon } from "lucide-react";
 
 export const projects = [];
 const products: {
@@ -58,7 +59,7 @@ const products: {
 
 const callsToAction = [
   { name: "Read our blog", href: "/blog", icon: PencilIcon },
-  { name: "Reach out", href: "mailto:ruben@pragmix.io", icon: PhoneIcon },
+  { name: "Reach out", href: "mailto:ruben@pragmix.io", icon: MailIcon },
   {
     name: "About the company",
     href: "/about",
@@ -72,7 +73,6 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
   return (
     <header className="relative isolate z-10 w-full">
       <nav

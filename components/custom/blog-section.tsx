@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default function BlogSection() {
   const blogDir = "blog";
 
   const files = fs.readdirSync(path.join(blogDir));
@@ -21,15 +21,12 @@ export default function Home() {
   });
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
             From the blog
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how we create value for your business.
-          </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {blogs.map((blog) => (
@@ -60,13 +57,13 @@ export default function Home() {
                   </svg>
                   <div className="flex gap-x-2.5">
                     <Image
-                      src={blog.meta.previewImage}
+                      src={blog.meta.author.imageUrl}
                       alt=""
                       className="h-6 w-6 flex-none rounded-full bg-white/10"
                       width={1000}
                       height={1000}
                     />
-                    {blog.meta.title}
+                    {blog.meta.author.name}
                   </div>
                 </div>
               </div>

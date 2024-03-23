@@ -1,11 +1,10 @@
-"use client";
 import { Contact } from "@/components/custom/contact";
 import Hero from "@/components/custom/hero";
 import Services from "@/components/custom/services";
 import Image from "next/image";
 
 import { CheckIcon } from "@heroicons/react/20/solid";
-import { useTheme } from "next-themes";
+import BlogSection from "@/components/custom/blog-section";
 
 const software_features = [
   {
@@ -61,7 +60,6 @@ const data_features = [
 ];
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
   return (
     <>
       <div className="flex flex-col items-center">
@@ -69,7 +67,7 @@ export default function Home() {
           <Hero></Hero>
         </div>
 
-        <div id="information" className="overflow-hidden py-48">
+        <div id="information" className="overflow-hidden py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
               <div className="lg:pr-8 lg:pt-4">
@@ -109,7 +107,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center max-w-full bg-gradient-to-br dark:from-amber-800 dark:to-slate-950 to-white  from-amber-100 py-48 rounded-lg">
+      <div className="flex flex-col items-center max-w-full bg-gradient-to-br dark:from-amber-800 dark:to-slate-950 to-white  from-amber-100 py-24 rounded-lg">
         <div className="overflow-hidden ">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -151,8 +149,30 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div id="services" className="w-full py-32">
+      <div id="blog-section" className="w-full py-16">
+        <BlogSection></BlogSection>
+      </div>
+      <div className="bg-amber-700">
+        <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-5xl font-bold tracking-tight text-white sm:text-4xl">
+              Who are we?
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-amber-200">
+              Learn more about the company and what we stand for.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="/about"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-amber-600 shadow-sm hover:bg-amber-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services" className="w-full py-40">
         <Services></Services>
       </div>
       <div className="w-full">
